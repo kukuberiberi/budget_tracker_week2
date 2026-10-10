@@ -1,8 +1,8 @@
 # Budget Tracker - Week 2 Project
 
-**Student / Project Name:** [Your Name / Project Title]  
+**Student / Project Name:** [Kuku Beriberi / Budget tracker]  
 **Due Date:** End of Week 2 (Friday, 17:00 EAT)  
-**Submission Repository:** [Insert GitHub Repository Link Here]
+**Submission Repository:** [https://github.com/kukuberiberi/budget_tracker_week2]
 
 ---
 
