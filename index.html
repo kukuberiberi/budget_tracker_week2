@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker - Week 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section with Multimedia Image -->
+    <header class="main-header">
+        <img src="https://via.placeholder.com/40" alt="Budget Tracker Logo" width="40" class="logo-img">
+        <h1>My Personal Budget Tracker</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="#dashboard">Dashboard</a> | 
+        <a href="#expenses">Expenses</a> | 
+        <a href="#add-expense">Add Expense</a>
+    </nav>
+
+    <main>
+        <!-- Interactive Details Element -->
+        <details class="help-section">
+            <summary>How to use this tracker</summary>
+            <p>Monitor your finances efficiently. Use the form below to add new transactions, and reference your historical logs in the table.</p>
+        </details>
+
+        <!-- 1. Correct HTML Table Structure -->
+        <section id="expenses" class="expenses-section">
+            <h2>Expense History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$45.50</td>
+                        <td>Food</td>
+                        <td>2026-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>$3.20</td>
+                        <td>Transport</td>
+                        <td>2026-10-02</td>
+                    </tr>
+                    <tr>
+                        <td>Apartment Rent</td>
+                        <td>$650.00</td>
+                        <td>Rent</td>
+                        <td>2026-10-03</td>
+                    </tr>
+                    <tr>
+                        <td>Cinema Ticket</td>
+                        <td>$15.00</td>
+                        <td>Entertainment</td>
+                        <td>2026-10-04</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee</td>
+                        <td>$4.50</td>
+                        <td>Other</td>
+                        <td>2026-10-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2. Working Form Upgrade with IDs and Select Dropdown -->
+        <section id="add-expense" class="add-expense-section">
+            <h2>Add New Expense</h2>
+            <form>
+                <div class="form-group">
+                    <label for="expense-name">Expense Name:</label>
+                    <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Groceries">
+                </div>
+
+                <div class="form-group">
+                    <label for="expense-amount">Amount ($):</label>
+                    <input type="number" id="expense-amount" name="expense-amount" placeholder="0.00">
+                </div>
+
+                <div class="form-group">
+                    <label for="expense-category">Category:</label>
+                    <select id="expense-category" name="expense-category">
+                        <option value="Food">Food</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="expense-date">Date:</label>
+                    <input type="date" id="expense-date" name="expense-date">
+                </div>
+
+                <button type="button" class="btn-submit">Add Expense</button>
+            </form>
+        </section>
+
+        <!-- 3. Multimedia Content: YouTube Embed -->
+        <section class="video-section">
+            <h2>Budgeting Tip of the Week</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Budgeting Tips Video" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Budget Tracker. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

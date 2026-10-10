@@ -1,0 +1,128 @@
+/* Global Reset & Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   ADVANCED CSS SELECTORS IMPLEMENTED:
+   1. Descendant Selector
+   2. Direct Child Selector
+   3. Position Pseudo-class (:nth-child / :first-child)
+   4. Negation Pseudo-class (:not)
+   5. State/Interaction Pseudo-class (:hover / :focus)
+   ========================================== */
+
+/* Table Layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.expenses-section th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* 1. Descendant Selector */
+.expenses-section td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* 3. Position Pseudo-class (Alternating row color) */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 3. Position Pseudo-class (First child row styling) */
+tr:first-child td {
+    border-top: 1px solid #dddddd;
+}
+
+/* 5. Interactive Hover State for Table Rows */
+.expenses-section tbody tr:hover {
+    background-color: #e9f5ff;
+}
+
+/* Form Layout */
+/* 2. Direct Child Selector */
+.add-expense-section > form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.add-expense-section .form-group {
+    margin-bottom: 15px;
+}
+
+.add-expense-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 4. Negation Pseudo-class */
+input:not([type="submit"]), select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 5. Focus State */
+input:focus, select:focus {
+    outline: none;
+    border-color: #2c3e50;
+    box-shadow: 0 0 5px rgba(44, 62, 80, 0.3);
+}
+
+/* Button with custom interactive cursor */
+.btn-submit {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #34495e;
+}
+
+/* Additional layout styles */
+.help-section {
+    background: #eef2f3;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.video-section {
+    margin-top: 20px;
+}
